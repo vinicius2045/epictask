@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Epic Task</a>
+            <a class="navbar-brand" href="#">T-car</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,17 +35,17 @@
                             Tarefa
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pendentes</a></li>
-                            <li><a class="dropdown-item" href="#">Concluídas</a></li>
+                            <li><a id="filtrar_pendentes" class="dropdown-item" href="#">Pendentes</a></li>
+                            <li><a id="filtrar_concluidas" class="dropdown-item" href="#">Concluídas</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="filtrar" aria-label="filtrar">
+                    <input class="form-control me-2" type="search" placeholder="filtrar carro" aria-label="filtrar carro">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
@@ -53,152 +53,56 @@
     </nav>
 
     <main class="container">
-        <div class="row mt-2">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="título" aria-label="título">
-            </div>
-            <div class="col">
-                <input type="number" class="form-control" placeholder="pontos" aria-label="pontos">
-            </div>
-            <div class="col-4">
-                <select class="form-select" aria-label="selecione a categoria">
-                    <option selected>Selecione a categoria</option>
-                    <option value="1">Estudos</option>
-                    <option value="2">Trabalho</option>
-                    <option value="3">Lazer</option>
-                </select>
-            </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary">Salvar</button>
-            </div>
-        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+            Cadastrar Carro
+        </button>
 
-        <div class="row">
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-trash3"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-trash3"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-trash3"></i>
-                    </a>
-                </div>
-
-            </div>
-            
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-trash3"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-trash3"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check2"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-trash3"></i>
-                    </a>
-                </div>
-
-            </div>
-            
-        </div>
+        <div id="tarefas" class="row mx-auto my-2 g-3">
+        </div> <!-- row -->
 
     </main>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Carro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 g-3">
+                        <div class="col-12">
+                            <input id="carro" type="text" class="form-control" placeholder="carro" aria-label="carro">
+                        </div>
+                        <div class="col-12">
+                            <input id="ano" type="number" class="form-control" placeholder="ano" aria-label="ano">
+                        </div>
+                        <div class="col-12">
+                            <select id="categoria" class="form-select" aria-label="selecione a categoria">
+                                <option selected>Selecione a categoria</option>
+                                <option value="esportivo">Esportivo</option>
+                                <option value="suv">SUV</option>
+                                <option value="sedã">Sedã</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button id="salvar" type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/crud.js"></script>
+    <script src="./js/filtro.js"></script>
 </body>
 
 </html>
+         
+       
+               
+                
